@@ -12,17 +12,26 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\die.gml</script>
+    <script>scripts\generatePiece.gml</script>
+    <script>scripts\playerHop.gml</script>
+    <script>scripts\playerLeap.gml</script>
+    <script>scripts\playerDie.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oSwipeController</object>
     <object>objects\oPlayer</object>
-    <object>objects\oFloor</object>
+    <objects name="pieces">
+      <object>objects\oLevelPiece</object>
+      <object>objects\oLevelGenerator</object>
+      <object>objects\oFloor</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
-  <constants number="4">
+  <constants number="6">
+    <constant name="HOP_POINTS">10</constant>
+    <constant name="LEAP_POINTS">20</constant>
     <constant name="FLOOR_HEIGHT">32</constant>
     <constant name="GAP_HEIGHT">16</constant>
     <constant name="HOP_HEIGHT">FLOOR_HEIGHT + GAP_HEIGHT</constant>

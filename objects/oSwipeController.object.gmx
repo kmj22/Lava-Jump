@@ -172,7 +172,7 @@ draw_set_colour(c_white);
 
 draw_text(8, 12, "Swipe = " + string(swipe));
 draw_text(8, 34, "Swipe Speed = " + string(swipeSpeed));
-draw_text(8, 58, "Point Direction = " + string(pointDir));
+draw_text(8, 58, "Score = " + string(score));
 </string>
           </argument>
         </arguments>
