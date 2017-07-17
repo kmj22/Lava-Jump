@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hop = keyboard_check_pressed(vk_up);
-leap = keyboard_check_pressed(vk_space) &amp;&amp; !hop;
+            <string>hop = keyboard_check_pressed(vk_up) || global.touchState == TOUCH.press;
+leap = (keyboard_check_pressed(vk_space) || global.touchState == TOUCH.up) &amp;&amp; !hop;
 
 if (hop){
     y -= HOP_HEIGHT;
