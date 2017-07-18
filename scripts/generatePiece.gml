@@ -1,13 +1,15 @@
 with (oLevelGenerator){
     var piece = noone;
-    
+
     // if the last piece was a gap, this one needs to be solid
-    // otherwise, we can randomly decide if it should be solid
-    if lastPiece == PIECES.gap || choose(true, false){
+    // there should also be a chance we'll pick a solid anyway
+    if (lastPiece == PIECES.gap || lastPiece == PIECES.banana ||
+        lastPiece == PIECES.wall_h) || choose(true, false){
+        
         piece = getFloor();
     }
     else{
-        piece = PIECES.gap;
+        piece = getHazard();
     }
     
     lastPiece = piece;
@@ -20,7 +22,21 @@ with (oLevelGenerator){
             instance_create(x,y,oFloorCracked);
             break;        
         case PIECES.ground_h:
-            instance_create(x,y,oFloor); 
+            instance_create(x,y,oFloorH); 
+            break;
+        case PIECES.frog:
+            instance_create(x,y,oFloor);
+            instance_create(x,y,oFrog); 
+            break;
+        case PIECES.turtle:
+            instance_create(x,y,oTurtle); 
+            break;
+       case PIECES.banana:
+            instance_create(x,y,oFloor);
+            instance_create(x,y,oBanana); 
+            break;
+       case PIECES.wall_h:
+            instance_create(x,y,oWallH);
             break;
     }
     

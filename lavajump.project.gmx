@@ -10,6 +10,9 @@
     <sprite>sprites\sBanana</sprite>
     <sprite>sprites\sFloor</sprite>
     <sprite>sprites\sFloorCracked</sprite>
+    <sprite>sprites\sFrog</sprite>
+    <sprite>sprites\sTurtle</sprite>
+    <sprite>sprites\sWallH</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -17,6 +20,7 @@
     <scripts name="Level Generation">
       <script>scripts\generatePiece.gml</script>
       <script>scripts\getFloor.gml</script>
+      <script>scripts\getHazard.gml</script>
     </scripts>
     <script>scripts\playerHop.gml</script>
     <script>scripts\playerLeap.gml</script>
@@ -29,21 +33,26 @@
       <object>objects\oLevelPiece</object>
       <object>objects\oLevelGenerator</object>
       <object>objects\oBanana</object>
+      <object>objects\oFrog</object>
       <object>objects\oFloor</object>
+      <object>objects\oFloorH</object>
+      <object>objects\oWallH</object>
+      <object>objects\oTurtle</object>
       <object>objects\oFloorCracked</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
   </rooms>
-  <constants number="7">
+  <constants number="8">
     <constant name="JUMP_TIME">24</constant>
     <constant name="HOP_POINTS">10</constant>
     <constant name="LEAP_POINTS">20</constant>
+    <constant name="FLOOR_WIDTH">32.0</constant>
     <constant name="FLOOR_HEIGHT">32.0</constant>
     <constant name="GAP_HEIGHT">16.0</constant>
-    <constant name="HOP_HEIGHT">FLOOR_HEIGHT + GAP_HEIGHT</constant>
-    <constant name="LEAP_HEIGHT">2 * (FLOOR_HEIGHT + GAP_HEIGHT)</constant>
+    <constant name="HOP_HEIGHT">48.0</constant>
+    <constant name="LEAP_HEIGHT">96.0</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

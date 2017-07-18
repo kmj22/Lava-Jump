@@ -28,11 +28,10 @@
             <string>event_inherited();
 
 enum PIECES {
-    ground = oFloor,
-    gap = 0,
+    ground,
+    gap,
     banana,
     ground_h,
-    ground_v,
     ground_cracked,
     frog,
     wall_h,
@@ -50,7 +49,7 @@ while(y &gt; -HOP_HEIGHT){
 }
 
 // set back into place to align with player
-y += 4;
+//y += 4;
 </string>
           </argument>
         </arguments>
@@ -82,6 +81,11 @@ with (all){
     else{
         y += .6;
     }
+}
+
+// keep generating pieces as the level moves
+if (y &gt;= - HOP_HEIGHT){
+    generatePiece();
 }
 </string>
           </argument>
