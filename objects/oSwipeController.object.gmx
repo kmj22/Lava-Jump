@@ -156,23 +156,8 @@ if (swipe){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Swipe Cursor
-draw_set_colour(c_orange);
-draw_line(mouseXStart, mouseYStart, mouseX, mouseY);
-
-draw_set_colour(c_black);
-draw_set_alpha(0.6);
-draw_rectangle(0, 0, 210, 75, 0);
-draw_set_alpha(1.0);
-
-draw_set_halign(fa_left);
-draw_set_valign(fa_center);
-
-draw_set_colour(c_white);
-
-draw_text(8, 12, "Swipe = " + string(swipe));
-draw_text(8, 34, "Swipe Speed = " + string(swipeSpeed));
-draw_text(8, 58, "Score = " + string(score));
+            <string>draw_text(8, 12, "High Score: " + string(score));
+draw_text(8, 34, "Score: " + string(score));
 </string>
           </argument>
         </arguments>
