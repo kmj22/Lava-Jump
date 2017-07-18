@@ -9,11 +9,15 @@
     <sprite>sprites\sPlayer</sprite>
     <sprite>sprites\sBanana</sprite>
     <sprite>sprites\sFloor</sprite>
+    <sprite>sprites\sFloorCracked</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\generatePiece.gml</script>
+    <scripts name="Level Generation">
+      <script>scripts\generatePiece.gml</script>
+      <script>scripts\getFloor.gml</script>
+    </scripts>
     <script>scripts\playerHop.gml</script>
     <script>scripts\playerLeap.gml</script>
     <script>scripts\playerDie.gml</script>
@@ -26,6 +30,7 @@
       <object>objects\oLevelGenerator</object>
       <object>objects\oBanana</object>
       <object>objects\oFloor</object>
+      <object>objects\oFloorCracked</object>
     </objects>
   </objects>
   <rooms name="rooms">

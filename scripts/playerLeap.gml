@@ -3,9 +3,11 @@ repeat (2) generatePiece();
 
 // Move all level pieces down
 with (oLevelPiece) {
-    alarm[0] = JUMP_TIME;
     shiftSpeed = 4;
 }
+
+// How long to shift things for
+alarm[1] = JUMP_TIME;
 
 // Add to score
 score += LEAP_POINTS;
