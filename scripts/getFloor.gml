@@ -20,13 +20,13 @@ else if (score < 1400){
     repeat(5) floors[| i++] = PIECES.ground;
     repeat(2) floors[| i++] = PIECES.ground_cracked;
     repeat(1) floors[| i++] = PIECES.ground_h;
-    repeat(1) floors[| i++] = PIECES.frog;
+    //repeat(1) floors[| i++] = PIECES.frog;
 }
-else if (score < 1800){
+else {
     repeat(3) floors[| i++] = PIECES.ground;
     repeat(3) floors[| i++] = PIECES.ground_cracked;
     repeat(1) floors[| i++] = PIECES.ground_h;
-    repeat(1) floors[| i++] = PIECES.frog;
+    //repeat(1) floors[| i++] = PIECES.frog;
     repeat(1) floors[| i++] = PIECES.turtle;
 }
 

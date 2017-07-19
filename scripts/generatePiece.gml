@@ -1,18 +1,16 @@
 with (oLevelGenerator){
     var piece = noone;
 
-    // if the last piece was a gap, this one needs to be solid
-    // there should also be a chance we'll pick a solid anyway
-    if (lastPiece == PIECES.gap || lastPiece == PIECES.banana ||
-        lastPiece == PIECES.wall_h) || choose(true, false){
-        
+    // if the last piece was a hazard, this one needs to be safe
+    // there should also be a chance we'll pick a safe anyway
+    if lastPieceWasHazard || choose(true, false){
+        lastPieceWasHazard = false;
         piece = getFloor();
     }
     else{
+        lastPieceWasHazard = true;
         piece = getHazard();
     }
-    
-    lastPiece = piece;
     
     switch(piece){
         case PIECES.ground:

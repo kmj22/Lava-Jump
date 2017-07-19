@@ -56,7 +56,7 @@ alarm[0] = timer;
           <argument>
             <kind>1</kind>
             <string>submerge = !submerge;
-alarm[0] = timer;
+alarm[0] = timer + !submerge * 60;
 
 if (submerge) then image_speed = animationSpeed;
 else image_speed = -animationSpeed;

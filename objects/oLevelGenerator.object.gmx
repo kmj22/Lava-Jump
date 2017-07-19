@@ -41,7 +41,7 @@ enum PIECES {
     turtle    
 }
 
-lastPiece = noone;
+lastPieceWasHazard = false;
 x = oPlayer.x;
 y = oPlayer.y;
 
@@ -74,8 +74,10 @@ while(y &gt; -HOP_HEIGHT){
             <kind>1</kind>
             <string>event_inherited();
 
+global.sinkSpeed = SINK_SPEED + score / 2000.0;
+
 with (all){
-    y += global.sinkSpeed + score / 2000.0;
+    y += global.sinkSpeed;
 }
 
 // keep generating pieces as the level moves

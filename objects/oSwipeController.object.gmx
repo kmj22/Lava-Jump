@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Swipe Control Variables
+            <string>score = 1000;
+
+///Swipe Control Variables
 mouseX = 0;
 mouseY = 0;
 mouseXStart = 0;

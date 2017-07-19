@@ -14,11 +14,12 @@ else if (score < 600){
 else if (score < 1200){
     repeat(4) hazards[| i++] = PIECES.gap;
     repeat(1) hazards[| i++] = PIECES.banana;
-    repeat(1) hazards[| i++] = PIECES.wall_h;
+    repeat(1) hazards[| i++] = PIECES.frog;
 }
 else{
     repeat(4) hazards[| i++] = PIECES.gap;
     repeat(2) hazards[| i++] = PIECES.banana;
+    repeat(1) hazards[| i++] = PIECES.frog;
     repeat(1) hazards[| i++] = PIECES.wall_h;
 }
 
