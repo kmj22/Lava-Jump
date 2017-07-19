@@ -6,9 +6,9 @@
   <vsnap>16</vsnap>
   <hsnap>16</hsnap>
   <isometric>0</isometric>
-  <speed>45</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>11836240</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -51,21 +51,15 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="oPlayer" x="144" y="240" name="inst_F8AF4B50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oFloor" x="144" y="240" name="inst_94A4ED8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSwipeController" x="0" y="48" name="inst_C6247C65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLevelGenerator" x="0" y="80" name="inst_4E7CBC0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSwipeController" x="-2496" y="-2432" name="inst_2E75B090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oFloor" x="144" y="288" name="inst_3FDCE940" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oFloor" x="144" y="336" name="inst_5F4EE340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oFloor" x="144" y="384" name="inst_95F75FCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oFloor" x="144" y="432" name="inst_E652A7CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="160" y="192" name="inst_F8AF4B50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFloor" x="160" y="272" name="inst_94A4ED8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSwipeController" x="32" y="48" name="inst_C6247C65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLevelGenerator" x="32" y="80" name="inst_4E7CBC0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFloor" x="160" y="352" name="inst_5F4EE340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFloor" x="160" y="432" name="inst_95F75FCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oFloor" x="160" y="192" name="inst_78214A27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="&lt;undefined&gt;" x="32" y="1792" w="64" h="64" xo="0" yo="0" id="10000004" name="inst_7DEFAAB6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="&lt;undefined&gt;" x="224" y="1552" w="64" h="64" xo="0" yo="0" id="10000005" name="inst_E81C2358" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="&lt;undefined&gt;" x="0" y="1168" w="64" h="64" xo="0" yo="0" id="10000006" name="inst_259F7212" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="&lt;undefined&gt;" x="208" y="704" w="64" h="64" xo="0" yo="0" id="10000007" name="inst_ED2A905E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="&lt;undefined&gt;" x="16" y="240" w="64" h="64" xo="0" yo="0" id="10000008" name="inst_DA200F39" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="&lt;undefined&gt;" x="256" y="80" w="64" h="64" xo="0" yo="0" id="10000009" name="inst_A24DDDDC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>

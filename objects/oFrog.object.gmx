@@ -34,6 +34,9 @@ hopSpeed = 2;
 
 _distance = HOP_HEIGHT;
 distance = _distance;
+
+image_speed = 0;
+image_index = 0;
 </string>
           </argument>
         </arguments>
@@ -88,12 +91,14 @@ vsp = -hopSpeed;
 if (vsp != 0){
     distance -= abs(vsp);
     y += vsp;
+    image_index = 1;
 }
 
 if (distance &lt;= 0){
     distance = _distance;
     vsp = 0;
     alarm[0] = jumpTime;
+    image_index = 0;
 }
 
 if !place_meeting(x,y,oLevelPiece) &amp;&amp; vsp == 0{

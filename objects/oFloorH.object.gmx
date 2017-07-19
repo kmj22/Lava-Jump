@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>event_inherited();
 
-hsp = 1;
-timeToReverse = FLOOR_WIDTH * 2;
+hsp = irandom_range(1, H_MOVE_SPEED) * choose(-1, 1);
+timeToReverse = FLOOR_WIDTH * 1.5;
 
 // since we start in the middle, move for half normal amount
 alarm[0] = timeToReverse / 2;

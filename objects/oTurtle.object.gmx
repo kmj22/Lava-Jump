@@ -28,7 +28,9 @@
             <string>event_inherited();
 
 submerge = false;
+animationSpeed = .5;
 timer = irandom_range(40, 80);
+image_speed = 0;
 
 alarm[0] = timer;
 </string>
@@ -55,6 +57,9 @@ alarm[0] = timer;
             <kind>1</kind>
             <string>submerge = !submerge;
 alarm[0] = timer;
+
+if (submerge) then image_speed = animationSpeed;
+else image_speed = -animationSpeed;
 </string>
           </argument>
         </arguments>
@@ -77,11 +82,36 @@ alarm[0] = timer;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>visible = !submerge;
+            <string>//visible = !submerge;
 
-if submerge &amp;&amp; place_meeting(x,y,oPlayer) &amp;&amp; oPlayer.state != STATES.jump{
+if submerge &amp;&amp; place_meeting(x,y,oPlayer) &amp;&amp; oPlayer.state != STATES.jump &amp;&amp; image_index == (image_number-1) {
     playerDie();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed = 0;
+if submerge then image_index = image_number - 1;
+else image_index = 0;
 </string>
           </argument>
         </arguments>
