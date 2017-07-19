@@ -156,7 +156,7 @@ if (swipe){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(8, 12, "High Score: " + string(score));
+            <string>draw_text(8, 12, "High Score: " + string(highscore_value(1)));
 draw_text(8, 34, "Score: " + string(score));
 </string>
           </argument>

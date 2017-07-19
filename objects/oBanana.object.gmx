@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if other.state != STATES.jump {
     other.state = STATES.stun;
-    other.alarm[0] = 90;
+    other.alarm[0] = 40;
     instance_destroy();
 }
 </string>
