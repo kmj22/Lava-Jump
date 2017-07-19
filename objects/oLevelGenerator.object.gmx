@@ -27,6 +27,9 @@
             <kind>1</kind>
             <string>event_inherited();
 
+// Rate at which level "sinks"
+global.sinkSpeed = 3;
+
 enum PIECES {
     ground,
     gap,
@@ -47,9 +50,6 @@ y = oPlayer.y;
 while(y &gt; -HOP_HEIGHT){
     generatePiece();    
 }
-
-// set back into place to align with player
-//y += 4;
 </string>
           </argument>
         </arguments>
@@ -75,12 +75,7 @@ while(y &gt; -HOP_HEIGHT){
             <string>event_inherited();
 
 with (all){
-    if oPlayer.jumping{
-        y -= .25
-    }
-    else{
-        y += .6;
-    }
+    y += global.sinkSpeed;
 }
 
 // keep generating pieces as the level moves

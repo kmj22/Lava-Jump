@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>event_inherited();
 
-hsp = 1;
-timeToReverse = FLOOR_WIDTH * 4;
+hsp = -1;
+timeToReverse = FLOOR_WIDTH * 6;
 
 // since we start in the middle, move for half normal amount
 alarm[0] = timeToReverse / 2;

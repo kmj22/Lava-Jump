@@ -79,7 +79,7 @@ alarm[0] = timer;
             <kind>1</kind>
             <string>visible = !submerge;
 
-if submerge &amp;&amp; place_meeting(x,y,oPlayer) &amp;&amp; !oPlayer.jumping{
+if submerge &amp;&amp; place_meeting(x,y,oPlayer) &amp;&amp; oPlayer.state != STATES.jump{
     playerDie();
 }
 </string>

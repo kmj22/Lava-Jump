@@ -75,7 +75,7 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if steppedOn = false &amp;&amp; !oPlayer.jumping{
+            <string>if steppedOn = false &amp;&amp; oPlayer.state != STATES.jump{
     steppedOn = true;
     alarm[1] = timeToBreak;
 }
